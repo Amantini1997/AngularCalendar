@@ -1,0 +1,70 @@
+$header-height: 10vh;
+
+.header {
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* align vertical */
+}
+
+.arrow {    
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    font-size: 100%;
+    border: none;
+    color: white;
+    // width: 20%;
+    height: $header-height;
+    padding: 0 8vw;
+    filter: invert(100%);
+    &:focus{
+        cursor: pointer;
+    }
+}
+
+$side-margin: 0%;
+
+.left {
+    // left: $side-margin;
+    transform: rotateY(180deg);
+}
+
+.month {
+    padding: 10px;
+}
+
+.right {
+    // right: $side-margin
+}
+
+
+//------------WEEK DAYS---------------
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* align vertical */
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: $header-height;
+    max-height: $header-height;
+}
+
+.week-day {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center; /* align horizontal */
+}
+
+.bar {    
+    height: 10vh;
+    background-color: lightgray;
+}

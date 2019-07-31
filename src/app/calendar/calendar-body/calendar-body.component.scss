@@ -1,0 +1,27 @@
+$border-size: .5vh;
+$border-col: rgb(173, 173, 173);
+
+.container {
+    background-color: white;
+    width: 100%;
+    // border-bottom: $border-attr;
+    // border-top: $border-attr; 
+    box-sizing: content-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* align vertical */
+    height: 10vh;
+}
+
+.day {
+    width: percentage(1 / 7);
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center; /* align horizontal */
+    height: 100%;
+    max-height: 100%;
+    box-sizing: content-box;
+}

@@ -1,0 +1,33 @@
+.calendar {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b989d;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.unoverridable {
+  position: relative;
+  z-index: 100;
+}
+
+.bar {
+  @extend .unoverridable;
+  animation: all .3s;
+  background-color: lightgray;
+  height: 10vh;
+  box-shadow: inset 0px 0px 4px 0px black;
+  padding: 10px;
+}
+
+#separator {
+  @extend .unoverridable;
+  border: 2px solid lightgray;
+  margin: 0;
+}
+
+// .sep-container {
+//   width: 100%;
+//   background-color: white;
+// }
