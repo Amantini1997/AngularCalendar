@@ -1,7 +1,13 @@
+@import '~src/scss/colors';
+
 #title {
     height: 10vh;
     font-weight: bold;
     display: flex;
     align-items: center; /* align vertical */
     justify-content: center; /* align horizontal */
+}
+
+:host {
+    background-image: linear-gradient($color3, $color5);
 }

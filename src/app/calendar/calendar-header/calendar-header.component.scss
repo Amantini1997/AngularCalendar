@@ -1,10 +1,13 @@
+@import '~src/scss/colors';
+
 $header-height: 10vh;
 
 .header {
-    color: white;
+    color: $color0;
     font-size: 100%;
     font-weight: bold;
     height: $header-height;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; /* align vertical */
@@ -16,12 +19,12 @@ $header-height: 10vh;
     align-items: center; /* align vertical */
     font-size: 100%;
     border: none;
-    color: white;
+    color: $color0;
     // width: 20%;
     height: $header-height;
     padding: 0 8vw;
     filter: invert(100%);
-    &:focus{
+    &:focus {
         cursor: pointer;
     }
 }
@@ -49,8 +52,8 @@ $side-margin: 0%;
     justify-content: space-between;
     align-items: center; /* align vertical */
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: rgba($color: white, $alpha: .5);
+    color: $color6;
     font-weight: bold;
     height: $header-height;
     max-height: $header-height;

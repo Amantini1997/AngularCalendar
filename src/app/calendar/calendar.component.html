@@ -1,0 +1,15 @@
+<div class="calendar">
+    <calendar-header 
+        [date]="currentDate"
+        (updateMonthEmitter)="updateDate($event)">
+    </calendar-header>
+    <!-- <hr id="separator"/> -->
+    <div id="bar"></div>
+    <calendar-body 
+        [bar]="bar"
+        [calendar]="calendar"
+        [currentDate]="currentDate"
+        (select)="showBar($event)">
+    </calendar-body>
+    <button id="confirm" (click)="confirm()">Confirm</button>
+</div>

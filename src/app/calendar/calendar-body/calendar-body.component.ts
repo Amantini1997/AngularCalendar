@@ -41,7 +41,7 @@ export class CalendarBodyComponent implements OnInit {
       isFromThisMonth: isFromThisMonth,
       day: day
     });
-    this.appendBar(e);
+    // this.appendBar(e);
   }
 
   appendBar(e: any) : void {
